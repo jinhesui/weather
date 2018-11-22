@@ -1,0 +1,28 @@
+{
+    "name": "jinhesui\/weather",
+    "description": "A weather SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jinhesui",
+            "email": "jinhesui@163.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^7.4",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jinhesui\\Weather\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jinhesui\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
